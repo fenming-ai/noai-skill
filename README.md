@@ -67,25 +67,25 @@ This is an editing workflow, not an AI detector, model, or benchmark result. It 
 Local tests cover scanner behavior and some instruction contracts. Teaching examples and a small cold-read exercise do not establish cross-model reliability. No private sessions or external evaluation dataset are bundled. See [evidence boundaries](references/evidence.md).
 
 
-## Chinese long-form evaluation
+## Chinese medium- and long-form evaluation
 
-Six new original synthetic long texts (1,399–1,632 Chinese characters each), six Skills plus plain rewriting, **42 rewrites and 84 ratings**. Generation and two blind review panels were configured as **gpt-6-astra / medium**. Each panel used three fresh reviewer contexts; each rewrite received one rating from each panel.
+Six original synthetic long texts and one 653-character medium-length development sample; six Skills plus plain rewriting. **gpt-6-astra / medium** for generation and model review.
 
-| Method | Mean / 100 |
-|---|---:|
-| noai | 100.00 |
-| shuorenhua | 99.27 |
-| Humanizer | 98.75 |
-| sepia | 98.33 |
-| Plain rewriting (no Skill) | 98.02 |
-| Humanizer-zh | 97.50 |
-| Stop Slop | 96.35 |
+| Method | Overall · 7 cases | Long · 6 cases | Medium · 1 case |
+|---|---:|---:|---:|
+| noai | 99.46 | 100.00 | 96.25 |
+| Humanizer | 98.93 | 98.75 | 100.00 |
+| shuorenhua | 98.84 | 99.27 | 96.25 |
+| sepia | 98.21 | 98.33 | 97.50 |
+| Plain rewriting (no Skill) | 97.95 | 98.02 | 97.50 |
+| Humanizer-zh | 97.50 | 97.50 | 97.50 |
+| Stop Slop | 96.88 | 96.35 | 100.00 |
 
-noai had the highest mean in this run. Its strongest observed behavior was preserving the original voice and avoiding unnecessary edits. **100 is the maximum score under this rubric, not a claim of perfect writing:** 48 of 84 ratings reached that ceiling. The source drafts were relatively mature, the unedited originals were not separately scored, and all authoring, generation, and judging used the same model configuration. This single-generation, six-case study does not establish net improvement in formulaic writing, broad superiority, or statistical significance.
+Scores weight each case equally: `(long mean × 6 + medium score) / 7`. This is a descriptive aggregation across batches: long-form outputs have two blind ratings each; the medium case reuses five completed outputs and ratings, with the two missing methods evaluated separately under the same rubric. It is not a simultaneous rerun or independent holdout validation. Small score differences do not establish statistical significance or broad superiority.
 
-[Full report and methodology (Chinese)](docs/evaluations/long-form/README.md) · [Download full-text HTML comparison](docs/evaluations/long-form/comparison.html) · [Inputs, outputs and rating evidence](docs/evaluations/long-form/results.json) · [Recompute the scores](docs/evaluations/long-form/recompute.py)
+[Report and methodology (Chinese)](docs/evaluations/mixed-length/README.md) · [Download HTML comparison](docs/evaluations/mixed-length/comparison.html) · [Rating data](docs/evaluations/mixed-length/results.json) · [Recompute](docs/evaluations/mixed-length/recompute.py)
 
-All six original synthetic inputs and all seven methods’ outputs are available in the report. Third-party rule packages are identified by source, revision, and hashes; they are not redistributed here. The earlier mixed-length evaluation remains below.
+All original synthetic long-form texts and rewrites are public. The medium sample is published as source location, hashes, and scores because text redistribution permission has not been confirmed. [Long-form details](docs/evaluations/long-form/README.md) remain available. High long-form scores primarily reflect preservation and editing restraint, not measured net improvement over unedited originals.
 
 ## Chinese rewriting evaluation
 
