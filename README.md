@@ -46,7 +46,7 @@ Use paths relative to your assistant's workspace. Instructions and examples are 
 
 Read the source → establish voice and editing boundaries → find candidates → decide whether to change → verify meaning and voice.
 
-Punctuation-only tasks use local checks; local edits use a brief tone note; full rewrites use the complete voice card. Read the entry point first and load references only for a specific question. Review mode returns a scope-appropriate report; zero issues is valid. File rewrite mode produces `<stem>-noai.<ext>` and `<stem>-noai-diff.html`, using the bundled `assets/diff-template.html`. Existing voice contracts are optional; their absence does not block normal use. Feedback is not uploaded anywhere by this package. Ask the assistant before saving private feedback into a shared skill folder.
+Review mode returns a voice card and a report; zero issues is valid. File rewrite mode produces `<stem>-noai.<ext>` and `<stem>-noai-diff.html`, using the bundled `assets/diff-template.html`. Existing voice contracts are optional; their absence does not block normal use. Feedback is not uploaded anywhere by this package. Ask the assistant before saving private feedback into a shared skill folder.
 
 ## Optional text checks
 
