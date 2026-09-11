@@ -6,6 +6,8 @@
 
 A Chinese-first editing skill for AI assistants that can read local files. It looks for formulaic expression, checks whether an edit has a real benefit, and preserves facts, qualifications, and the original voice. It can also review technical documents, interface copy, diagram labels, and code comments.
 
+**Shortcut:** `noai: text or file path` rewrites the supplied material; `noai 检查: material` reviews only. A bare `noai` asks for material when none is clear.
+
 ## What makes it useful
 
 - **Voice before edits:** identify the original tone, rhythm, perspective, and protected passages.
