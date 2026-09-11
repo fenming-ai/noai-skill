@@ -68,6 +68,26 @@ python3 -m unittest discover -s tests -t .
 本地测试覆盖扫描器行为和部分规则约定。教学样例与小规模冷读不代表跨模型稳定性。本包不包含私人会话和外部评测数据集。见[证据边界](references/evidence.md)。
 
 
+## 中文长文专项评测
+
+6 篇新创作的模拟长文，每篇 1,399—1,632 汉字；6 个 Skill 加普通改写基线，共 **42 份改稿、84 份评分记录**。生成与两组盲评均配置为 **gpt-6-astra / medium**。每组由 3 个独立评审上下文完成，每份改稿获得两组各一次评分。
+
+| 方案 | 均分 / 100 |
+|---|---:|
+| noai | 100.00 |
+| shuorenhua（说人话） | 99.27 |
+| Humanizer | 98.75 |
+| sepia | 98.33 |
+| 普通改写（无 Skill） | 98.02 |
+| Humanizer-zh | 97.50 |
+| Stop Slop | 96.35 |
+
+noai 本轮均分最高，表现更体现为保住原文声音、避免过度改写。**100 分是当前量表满分，不代表完美：**84 份评分中有 48 份满分。原稿相对成熟，未对不改动的原文另行评分，样本创作、生成和评审也使用同一模型配置。因此，这次六例、单次生成的结果不能证明净去味提升、普遍优势或统计显著性。
+
+[完整报告与方法](docs/evaluations/long-form/README.md) · [下载全文 HTML 对照](docs/evaluations/long-form/comparison.html) · [输入、输出和逐项评分证据](docs/evaluations/long-form/results.json) · [复算成绩](docs/evaluations/long-form/recompute.py)
+
+报告公开全部原创模拟原文及七个方案的改稿；第三方规则包仅列来源、版本与哈希，不重新分发。此前的不同篇幅评测继续保留如下。
+
 ## 中文改写对比评测
 
 6 个开发样本、5 个方案，每例每方案生成一次。生成与独立匿名模型评审均配置为 **gpt-6-astra / medium**。

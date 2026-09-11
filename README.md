@@ -67,6 +67,26 @@ This is an editing workflow, not an AI detector, model, or benchmark result. It 
 Local tests cover scanner behavior and some instruction contracts. Teaching examples and a small cold-read exercise do not establish cross-model reliability. No private sessions or external evaluation dataset are bundled. See [evidence boundaries](references/evidence.md).
 
 
+## Chinese long-form evaluation
+
+Six new original synthetic long texts (1,399–1,632 Chinese characters each), six Skills plus plain rewriting, **42 rewrites and 84 ratings**. Generation and two blind review panels were configured as **gpt-6-astra / medium**. Each panel used three fresh reviewer contexts; each rewrite received one rating from each panel.
+
+| Method | Mean / 100 |
+|---|---:|
+| noai | 100.00 |
+| shuorenhua | 99.27 |
+| Humanizer | 98.75 |
+| sepia | 98.33 |
+| Plain rewriting (no Skill) | 98.02 |
+| Humanizer-zh | 97.50 |
+| Stop Slop | 96.35 |
+
+noai had the highest mean in this run. Its strongest observed behavior was preserving the original voice and avoiding unnecessary edits. **100 is the maximum score under this rubric, not a claim of perfect writing:** 48 of 84 ratings reached that ceiling. The source drafts were relatively mature, the unedited originals were not separately scored, and all authoring, generation, and judging used the same model configuration. This single-generation, six-case study does not establish net improvement in formulaic writing, broad superiority, or statistical significance.
+
+[Full report and methodology (Chinese)](docs/evaluations/long-form/README.md) · [Download full-text HTML comparison](docs/evaluations/long-form/comparison.html) · [Inputs, outputs and rating evidence](docs/evaluations/long-form/results.json) · [Recompute the scores](docs/evaluations/long-form/recompute.py)
+
+All six original synthetic inputs and all seven methods’ outputs are available in the report. Third-party rule packages are identified by source, revision, and hashes; they are not redistributed here. The earlier mixed-length evaluation remains below.
+
 ## Chinese rewriting evaluation
 
 Six development samples, five methods, one output per sample and method. Generation and independent blind model review were both configured as **gpt-6-astra / medium**.
