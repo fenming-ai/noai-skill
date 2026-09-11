@@ -66,6 +66,25 @@ This is an editing workflow, not an AI detector, model, or benchmark result. It 
 
 Local tests cover scanner behavior and some instruction contracts. Teaching examples and a small cold-read exercise do not establish cross-model reliability. No private sessions or external evaluation dataset are bundled. See [evidence boundaries](references/evidence.md).
 
+
+## Chinese rewriting evaluation
+
+Six development samples, five methods, one output per sample and method. Generation and independent blind model review were both configured as **gpt-6-astra / medium**.
+
+| Method | Mean / 100 |
+|---|---:|
+| Humanizer | 96.25 |
+| Stop Slop | 96.25 |
+| Plain rewriting (no Skill) | 95.83 |
+| noai | 95.83 |
+| Humanizer-zh | 94.17 |
+
+noai tied plain rewriting in this run. These small-sample scores do not establish a statistically significant advantage or cross-model reliability.
+
+[Evaluation report and methodology (Chinese)](docs/evaluations/chinese-rewrite/README.md) · [Download HTML report](docs/evaluations/chinese-rewrite/comparison.html) · [Results data](docs/evaluations/chinese-rewrite/results.json)
+
+Full source texts and rewrites are not redistributed because dataset redistribution permission has not been confirmed. The report provides numerical results, source locators, and hashes.
+
 ## License and attribution
 
 MIT for original package content. Third-party material retains its notices: see [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and `licenses/`.

@@ -67,6 +67,25 @@ python3 -m unittest discover -s tests -t .
 
 本地测试覆盖扫描器行为和部分规则约定。教学样例与小规模冷读不代表跨模型稳定性。本包不包含私人会话和外部评测数据集。见[证据边界](references/evidence.md)。
 
+
+## 中文改写对比评测
+
+6 个开发样本、5 个方案，每例每方案生成一次。生成与独立匿名模型评审均配置为 **gpt-6-astra / medium**。
+
+| 排名 | 方案 | 均分 / 100 | 严重错误例数 |
+|---:|---|---:|---:|
+| 1 | Humanizer | 96.25 | 0/6 |
+| 1 | Stop Slop | 96.25 | 0/6 |
+| 3 | 普通改写（无 Skill） | 95.83 | 0/6 |
+| 3 | noai | 95.83 | 0/6 |
+| 5 | Humanizer-zh | 94.17 | 0/6 |
+
+noai 在本轮与普通改写同分。小样本分差不证明显著优势，也不代表跨模型稳定性。
+
+[评测报告与测试方法](docs/evaluations/chinese-rewrite/README.md) · [下载 HTML 报告](docs/evaluations/chinese-rewrite/comparison.html) · [结果数据](docs/evaluations/chinese-rewrite/results.json)
+
+样本全文再分发许可尚未确认，公开报告提供成绩、来源定位与哈希，不分发原文和改写全文。
+
 ## 许可与来源
 
 本包原创部分采用 MIT；第三方内容保留对应通知，见 [LICENSE](LICENSE)、[第三方说明](THIRD_PARTY_NOTICES.md) 和 `licenses/`。
