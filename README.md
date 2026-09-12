@@ -83,9 +83,9 @@ Six original synthetic long texts and one 653-character medium-length developmen
 
 Scores weight each case equally: `(long mean × 6 + medium score) / 7`. This is a descriptive aggregation across batches: long-form outputs have two blind ratings each; the medium case reuses five completed outputs and ratings, with the two missing methods evaluated separately under the same rubric. It is not a simultaneous rerun or independent holdout validation. Small score differences do not establish statistical significance or broad superiority.
 
-[Report and methodology (Chinese)](docs/evaluations/mixed-length/README.md) · [Download HTML comparison](docs/evaluations/mixed-length/comparison.html) · [Rating data](docs/evaluations/mixed-length/results.json) · [Recompute](docs/evaluations/mixed-length/recompute.py)
+[Report and methodology (Chinese)](docs/evaluations/mixed-length/README.md) · [Download HTML comparison](docs/evaluations/mixed-length/comparison.html)
 
-All original synthetic long-form texts and rewrites are public. The medium sample is published as source location, hashes, and scores because text redistribution permission has not been confirmed. [Long-form details](docs/evaluations/long-form/README.md) remain available. High long-form scores primarily reflect preservation and editing restraint, not measured net improvement over unedited originals.
+All original synthetic long-form texts and rewrites are available in the HTML comparison. The medium sample is shown by source and aggregate scores because text redistribution permission has not been confirmed. [Long-form details](docs/evaluations/long-form/README.md) remain available. High long-form scores primarily reflect preservation and editing restraint, not measured net improvement over unedited originals.
 
 ## Chinese rewriting evaluation
 
@@ -101,9 +101,9 @@ Six development samples, five methods, one output per sample and method. Generat
 
 noai tied plain rewriting in this run. These small-sample scores do not establish a statistically significant advantage or cross-model reliability.
 
-[Evaluation report and methodology (Chinese)](docs/evaluations/chinese-rewrite/README.md) · [Download HTML report](docs/evaluations/chinese-rewrite/comparison.html) · [Results data](docs/evaluations/chinese-rewrite/results.json)
+[Evaluation report and methodology (Chinese)](docs/evaluations/chinese-rewrite/README.md) · [Download HTML report](docs/evaluations/chinese-rewrite/comparison.html)
 
-Full source texts and rewrites are not redistributed because dataset redistribution permission has not been confirmed. The report provides numerical results, source locators, and hashes.
+Full source texts and rewrites are not redistributed because dataset redistribution permission has not been confirmed. The report provides numerical results and source attribution.
 
 ## License and attribution
 

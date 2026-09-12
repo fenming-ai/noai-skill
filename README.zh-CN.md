@@ -84,9 +84,9 @@ python3 -m unittest discover -s tests -t .
 
 每篇等权：`（长文均分×6＋中篇分数）÷7`。这是跨批次描述性汇总：长文每份两次匿名评分；中篇沿用五个已完成方案的输出与评分，另两个方案使用同一量表补齐。不是同期全量复测，也不是独立留出验证；小分差不能证明统计显著或普遍优势。
 
-[报告与方法](docs/evaluations/mixed-length/README.md) · [下载HTML对照](docs/evaluations/mixed-length/comparison.html) · [评分数据](docs/evaluations/mixed-length/results.json) · [复算脚本](docs/evaluations/mixed-length/recompute.py)
+[报告与方法](docs/evaluations/mixed-length/README.md) · [下载HTML对照](docs/evaluations/mixed-length/comparison.html)
 
-原创模拟长文及改稿全文公开。中篇原文再分发许可尚未确认，公开来源定位、哈希与分数。[长文专项详情](docs/evaluations/long-form/README.md)可单独查看。长文高分更体现原意保留和编辑克制，不代表已测得相对未编辑原稿的净去味提升。
+原创模拟长文及改稿可在 HTML 对照页查看。中篇原文再分发许可尚未确认，公开版只保留来源与汇总分数。[长文专项详情](docs/evaluations/long-form/README.md)可单独查看。长文高分更体现原意保留和编辑克制，不代表已测得相对未编辑原稿的净去味提升。
 
 ## 中文改写对比评测
 
@@ -102,9 +102,9 @@ python3 -m unittest discover -s tests -t .
 
 noai 在本轮与普通改写同分。小样本分差不证明显著优势，也不代表跨模型稳定性。
 
-[评测报告与测试方法](docs/evaluations/chinese-rewrite/README.md) · [下载 HTML 报告](docs/evaluations/chinese-rewrite/comparison.html) · [结果数据](docs/evaluations/chinese-rewrite/results.json)
+[评测报告与测试方法](docs/evaluations/chinese-rewrite/README.md) · [下载 HTML 报告](docs/evaluations/chinese-rewrite/comparison.html)
 
-样本全文再分发许可尚未确认，公开报告提供成绩、来源定位与哈希，不分发原文和改写全文。
+样本全文再分发许可尚未确认，公开报告提供成绩与来源说明，不分发原文和改写全文。
 
 ## 许可与来源
 

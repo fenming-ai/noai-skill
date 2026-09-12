@@ -22,8 +22,8 @@
 
 ## 全文与来源
 
-六篇长文为原创模拟材料，全文公开。中篇来自C-ReD的固定版本，公开来源定位、原文与输出哈希及分项分数；由于未确认正文再分发许可，公开版不包含该篇原文、改稿与引用原文的评审证据。本地版提供完整对照。
+六篇长文为原创模拟材料，可在 HTML 对照页查看。中篇来自 C-ReD 的固定版本，公开版只展示来源与汇总分数；由于未确认正文再分发许可，不包含该篇原文、改稿与引用原文的评审证据。本地评测资料保留完整对照。
 
 中篇：执业药师证的职业价值分析，653汉字。[原始数据来源](https://github.com/HeraldofLight/C-ReD/blob/b90072cd218b6ebdbd1d1478ce6e439677f18192/benchmark%20data/question%20answer/CReD_question_answer_qwen-3.csv)，CSV记录2128。
 
-[HTML对照报告](comparison.html) · [评分数据](results.json) · [复算脚本](recompute.py)
+[HTML对照报告](comparison.html)

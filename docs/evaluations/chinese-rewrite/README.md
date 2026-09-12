@@ -29,6 +29,6 @@
 
 ## 来源与复核
 
-原文取自 [C-ReD](https://github.com/HeraldofLight/C-ReD)。尚未确认全文再分发许可，本页公开成绩、方法和样本定位，不分发原文及改写全文。输入来源路径、行号与哈希见 [结果数据](results.json)。
+原文取自 [C-ReD](https://github.com/HeraldofLight/C-ReD)。尚未确认全文再分发许可，本页只公开成绩、方法和来源说明，不分发原文及改写全文。完整来源定位与哈希保留在本地评测资料中。
 
-[下载 HTML 报告](comparison.html) · [机器可读结果](results.json)
+[下载 HTML 报告](comparison.html)
