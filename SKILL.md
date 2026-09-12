@@ -308,6 +308,8 @@ AI 读产出物（或从 HTML 提取的纯文本），跑 5 Tell + 五问 + DNA 
 
 ## 加载策略
 
+工具推荐、知识卡与图文短文案额外读取 [推荐文案对照](samples/recommendation-pairs.md)，只处理表达，不改变已确认的推荐名单、证据或视觉基线。
+
 | 场景 | 加载 | context 预算 |
 |------|------|-------------|
 | 任何产出（常驻） | editor-persona.md + human-voice.md | ~2.5k |
