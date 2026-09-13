@@ -70,6 +70,10 @@ python3 -m unittest discover -s tests -t .
 
 ## 中文中长文综合评测
 
+新版效果比较与回归验证使用 [humanize-evals](https://github.com/fenming-ai/humanize-evals)，由它管理案例版本、匿名评审和评分。接入方式见[评测约定](references/evaluation.md)：固定实际加载的规则、模型设置，分开开发集与验收集。评测按需运行，日常去味不会下载数据集或启动模型测试。
+
+以下是各自保留原方法的历史实验，不代表当前 humanize-evals 数据集或评分协议的成绩。
+
 6篇原创模拟长文，加1篇653汉字的中篇开发样本；6款Skill与普通改写基线。生成与模型评审均配置为 **gpt-6-astra / medium**。
 
 | 方案 | 综合·7篇 | 长文·6篇 | 中篇·1篇 |

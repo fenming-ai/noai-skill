@@ -69,6 +69,10 @@ Local tests cover scanner behavior and some instruction contracts. Teaching exam
 
 ## Chinese medium- and long-form evaluation
 
+For new evaluations and version regressions, use [humanize-evals](https://github.com/fenming-ai/humanize-evals). It provides versioned cases, anonymous review and scoring. See the [evaluation integration guide](references/evaluation.md) for rule snapshots, model configuration and development/holdout separation. Evaluation is optional; normal rewriting does not download datasets or run model tests.
+
+The reports below are historical experiments with their own methods. They are not results from the current humanize-evals dataset or scoring protocol.
+
 Six original synthetic long texts and one 653-character medium-length development sample; six Skills plus plain rewriting. **gpt-6-astra / medium** for generation and model review.
 
 | Method | Overall · 7 cases | Long · 6 cases | Medium · 1 case |
