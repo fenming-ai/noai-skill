@@ -44,6 +44,26 @@ class VoiceContractTest(unittest.TestCase):
         ):
             self.assertIn(guard, SKILL_TEXT)
 
+    def test_optional_zhuque_report_is_an_attention_map_not_a_verdict(self) -> None:
+        for guard in (
+            "zhuque-report/v1",
+            "document.visible_sha256",
+            "independently_scored=false",
+            "不证明作者身份、原创性或平台限流原因",
+            "不主动调用外部检测服务",
+        ):
+            self.assertIn(guard, SKILL_TEXT)
+
+    def test_document_patterns_are_grouped_before_local_candidates(self) -> None:
+        whole = SKILL_TEXT.index("先跑全文模式")
+        local = SKILL_TEXT.index("段落与句子检视")
+        persona = (Path(__file__).parents[1] / "references/editor-persona.md").read_text(encoding="utf-8")
+        self.assertLess(whole, local)
+        self.assertIn("语感卡 → 外部风险报告状态（如有）→ 全文模式 → 局部候选", SKILL_TEXT)
+        self.assertIn("不把同一模式下的每个自然段分别改写", SKILL_TEXT)
+        self.assertIn("可以识别并合并过度对称、短段过密等全文模式", persona)
+        self.assertNotIn("不改结构（那是内容 skill 的事", persona)
+
 
 if __name__ == "__main__":
     unittest.main()
