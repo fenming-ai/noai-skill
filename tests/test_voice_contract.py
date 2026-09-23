@@ -61,12 +61,24 @@ class VoiceContractTest(unittest.TestCase):
         local = SKILL_TEXT.index("段落与句子检视")
         persona = (Path(__file__).parents[1] / "references/editor-persona.md").read_text(encoding="utf-8")
         self.assertLess(whole, local)
-        self.assertIn("语感卡 → 外部风险报告状态（如有）→ 全文模式 → 局部候选", SKILL_TEXT)
+        self.assertIn("语感卡 → 外部风险报告状态（如有）→ 上游来源诊断 → 全文模式 → 局部候选", SKILL_TEXT)
         self.assertIn("不把同一模式下的每个自然段分别改写", SKILL_TEXT)
         self.assertIn("判断密集时允许金句密集", SKILL_TEXT)
         self.assertIn("另汇总“检测器冲突”", SKILL_TEXT)
         self.assertIn("可以识别并合并过度对称、短段过密等全文模式", persona)
         self.assertNotIn("不改结构（那是内容 skill 的事", persona)
+
+    def test_long_form_reports_upstream_source_and_closure_saturation(self) -> None:
+        for guard in (
+            "local-copy",
+            "section-structure",
+            "source-contract",
+            "最后四分之一",
+            "职责饱和",
+            "0 条必须改",
+            "不等于全文没有结构问题",
+        ):
+            self.assertIn(guard, SKILL_TEXT)
 
 
 if __name__ == "__main__":
