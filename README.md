@@ -48,6 +48,8 @@ Read the source → establish voice and editing boundaries → find candidates �
 
 Review mode returns a voice card and a report; zero issues is valid. File rewrite mode produces `<stem>-noai.<ext>` and `<stem>-noai-diff.html`, using the bundled `assets/diff-template.html`. Existing voice contracts are optional; their absence does not block normal use. Feedback is not uploaded anywhere by this package. Ask the assistant before saving private feedback into a shared skill folder.
 
+For everyday short messages, use the conditional [short-message review](references/short-messages.md): preserve useful courtesy, check the relationship and the intended decision, and return strategy mistakes to the upstream writer. Embedded checks do not automatically produce a long report or HTML files. Technical documents and long-form prose keep their existing workflow.
+
 ## Optional text checks
 
 Python 3.10+ is needed only for the optional scanner and local tests. The scanner flags selected wording, punctuation, and quote patterns; it does not rewrite text or determine whether AI wrote it.
