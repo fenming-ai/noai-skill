@@ -115,3 +115,5 @@ noai 在本轮与普通改写同分。小样本分差不证明显著优势，也
 ## 许可与来源
 
 本包原创部分采用 MIT；第三方内容保留对应通知，见 [LICENSE](LICENSE)、[第三方说明](THIRD_PARTY_NOTICES.md) 和 `licenses/`。
+
+图文表达对照见[视觉媒介曲子库](samples/diagram-pairs.md)：短词不一定具体，生活例子不能挤掉必要方法，决策标签和有用重复应当保留。

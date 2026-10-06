@@ -360,7 +360,7 @@ AI 读产出物（或从 HTML 提取的纯文本），先跑全文模式，再�
 | 任何产出（常驻） | editor-persona.md + human-voice.md | ~2.5k |
 | 写/改文字 | + prose-pairs.md | +2k → ~4.5k |
 | 写/改技术文档 | + tech-doc-pairs.md | +2k → ~4.5k |
-| 画架构图 | + diagram-pairs.md | +2k → ~4.5k |
+| 画架构图／信息图文案 | + diagram-pairs.md（含短句仍空泛、例子挤掉方法、必要重复的保留对照） | 按相关样例读取 |
 | 写代码 | + code-pairs.md | +2k → ~4.5k |
 | 审稿/终检 | 上述 + anti-examples.md + humanizer-zh.md + evidence.md | +3k → ~7.5k |
 | 深度调试 | + principles.md 全文 | +2k → ~9.5k |
