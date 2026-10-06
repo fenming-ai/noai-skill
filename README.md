@@ -114,3 +114,5 @@ Full source texts and rewrites are not redistributed because dataset redistribut
 ## License and attribution
 
 MIT for original package content. Third-party material retains its notices: see [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and `licenses/`.
+
+作者定稿和仅格式处理见[边界与对照](references/author-final-copy.md)：保护真实经历、情绪及有作用的停顿；不主动造错字，不在只去空格时润色全文。
