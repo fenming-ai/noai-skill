@@ -13,6 +13,7 @@ A Chinese-first editing skill for AI assistants that can read local files. It lo
 - **Voice before edits:** identify the original tone, rhythm, perspective, and protected passages.
 - **Signals are not verdicts:** a repeated phrase or a balanced sentence is a candidate for review, not an automatic deletion.
 - **Preserve meaning both ways:** check for lost information and unsupported additions after rewriting.
+- **Keep the intended outcome:** do not reduce “understand it, then make my own” to understanding alone. Apply examples within their approved context; a cover label is not automatically a prose voice model. See [recommendation examples](samples/recommendation-pairs.md).
 - **Learn when to leave it alone:** examples include useful edits and rejected edits that would flatten the author's voice.
 - **Keep the source:** file-based rewriting creates a new file plus a readable HTML comparison.
 
