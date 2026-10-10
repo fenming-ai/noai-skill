@@ -12,6 +12,7 @@ A Chinese-first editing skill for AI assistants that can read local files. It lo
 
 - **Voice before edits:** identify the original tone, rhythm, perspective, and protected passages.
 - **Signals are not verdicts:** a repeated phrase or a balanced sentence is a candidate for review, not an automatic deletion.
+- **Check stock conversational phrases:** review whether questions such as “where are you stuck?” serve the current exchange, including repetition disguised by synonyms. Preserve accurate descriptions and useful diagnostic questions. See [examples](samples/prose-pairs.md#曲子-20口语套句也要有具体作用).
 - **Preserve meaning both ways:** check for lost information and unsupported additions after rewriting.
 - **Keep the intended outcome:** do not reduce “understand it, then make my own” to understanding alone. Apply examples within their approved context; a cover label is not automatically a prose voice model. See [recommendation examples](samples/recommendation-pairs.md).
 - **Learn when to leave it alone:** examples include useful edits and rejected edits that would flatten the author's voice.
