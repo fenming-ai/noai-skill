@@ -121,3 +121,5 @@ MIT for original package content. Third-party material retains its notices: see 
 亲历类材料另保护“原任务、意外结果、额外工作”的联系，见[作者定稿](references/author-final-copy.md)与[现场感对照](samples/prose-pairs.md#曲子-19反向保留留住额外工作情绪才有来处)。不凭空补实测或心理反应。
 
 When embedded in a production skill or an ordinary reply, review internally and keep the caller’s output format. Routine replies do not require a separate report; formal content keeps its existing review record. Preserve technical reasoning and exact-copy boundaries. Explicit standalone reviews retain the full workflow.
+
+可选接收内容判断技能（如 hold-skill）对当前稿件的诊断：缺材料或判断依据时回传具体问题，表达仍由 noai 独立审读。不依赖此类技能也能完成原有去味任务，不自动安装或扩展任务范围。
