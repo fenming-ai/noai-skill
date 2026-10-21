@@ -52,6 +52,15 @@ Review mode returns a voice card and a report; zero issues is valid. File rewrit
 
 For everyday short messages, use the conditional [short-message review](references/short-messages.md): preserve useful courtesy, check the relationship and the intended decision, and return strategy mistakes to the upstream writer. Embedded checks do not automatically produce a long report or HTML files. Technical documents and long-form prose keep their existing workflow.
 
+
+## Structural rewriting, intent recovery, and ad copy
+
+The editor can reorganize a draft and recover intent from supplied source material, rather than preserving a draft's mistakes. Exact-copy and review-only boundaries still apply. Advertising edits preserve useful personification, contrasts and rhythm; they do not invent product positioning or performance claims.
+
+See [rewriting and intent](references/rewrite-and-intent.md), [ad editing](references/advertising-edit.md), and [teaching examples](samples/advertising-pairs.md). The examples distinguish attributed short quotations from original synthetic exercises. No other writing skill is required.
+
+[Development observations and limits](tests/structure-advertising-dev-2026-10-21.md) describe this update; they do not establish cross-product reliability or conversion gains.
+
 ## Optional text checks
 
 Python 3.10+ is needed only for the optional scanner and local tests. The scanner flags selected wording, punctuation, and quote patterns; it does not rewrite text or determine whether AI wrote it.

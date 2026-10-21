@@ -55,3 +55,8 @@ MODEL_ID 必须换为实际模型，并在适配器中真正设置；没有适�
 本轮局部开发观察见[短消息旧版／候选／普通润色对照](../tests/short-messages-dev-2026-10-01.md)；没有运行正式排名协议，不用于改写既有分数。
 
 作者定稿与格式边界的本轮离线开发审读见[记录](../tests/author-final-copy-dev-2026-10-07.md)，未运行模型A/B，不作为效果提升或排名证据。
+
+
+结构与广告专项按[本轮开发记录](../tests/structure-advertising-dev-2026-10-21.md)区分：修结构、按材料恢复目标、保护有用修辞、修正过度承诺后仍完成广告任务、逐字锁定与纯格式处理。采用 `scripts/eval_snapshot.py` 时按本次场景显式包含 `references/rewrite-and-intent.md`、`references/advertising-edit.md`、`samples/advertising-pairs.md`；旧版没有的文件不得补给旧条件。公开教学案例不作为未见过的验收题。
+
+至少同时查看无修改的保留样本与需要重写的样本，不能只统计去掉多少句。普通编辑已能完成的任务，不应因新版也完成就宣称增益。修正无据保证后只剩功能句，事实回查可成立，但广告表达仍须另判；不以事实安全抵消任务未完成。

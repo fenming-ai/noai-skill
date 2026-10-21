@@ -1,0 +1,303 @@
+{
+  "kind": "synthetic-development-observations",
+  "date": "2026-10-21",
+  "baseline_commit": "e80684678b184007fc16b3078caeb96c394e87f1",
+  "candidate_v1_sha256": {
+    "SKILL.md": "505d76db607c69b282b880b7dea4ce6f94e566b0a824470a3dd58a799fa90801",
+    "references/editor-persona.md": "b90f6bc90bf4ad2f5adc63e2c039b94e26d1b8ff1b49796cd72b262cb519733b",
+    "references/rewrite-and-intent.md": "542610e341059ac05577d5912acd0514b19b86459b35063ff7c235e658900803",
+    "references/advertising-edit.md": "23e21d5365565505bb232c99c9c26b801d1a256e0940739707fdd9510d2a4a81",
+    "samples/advertising-pairs.md": "d0c8269e77193283b625b52ee37d524db136a7b54f0f2d3463283be6f25bb180"
+  },
+  "candidate_final_sha256": {
+    "SKILL.md": "505d76db607c69b282b880b7dea4ce6f94e566b0a824470a3dd58a799fa90801",
+    "references/editor-persona.md": "b90f6bc90bf4ad2f5adc63e2c039b94e26d1b8ff1b49796cd72b262cb519733b",
+    "references/rewrite-and-intent.md": "542610e341059ac05577d5912acd0514b19b86459b35063ff7c235e658900803",
+    "references/advertising-edit.md": "f84df5c1c62c12d1da5c8becd5c5071cb80747bb7413b548df594f4fa05d1470",
+    "samples/advertising-pairs.md": "d0c8269e77193283b625b52ee37d524db136a7b54f0f2d3463283be6f25bb180"
+  },
+  "cases": [
+    {
+      "id": "structure-full",
+      "task": "给这份面向学生的服务说明去AI味，必要时重写结构。只交改稿，不要评语。",
+      "material": "服务：旧衣修补。带实物到店评估；能修才接，接单时确认价格和取件时间；不提供清洗；不可修复的破损会当面说明。目标读者：还喜欢旧衣、想先判断能否继续穿的学生。",
+      "text": "旧衣修补，是一种对于衣物价值的重新发现。它不仅是对破损的处理，更是对日常陪伴的延续。\n\n首先，带实物到店，才能对破损情况作出具体评估。通过当面沟通，可以确定是否承接修补。这意味着，每一次服务都以实际情况为基础。\n\n其次，在接单时确认价格和取件时间。明确价格，帮助双方建立预期；明确时间，帮助双方安排计划。这是沟通的重要意义。\n\n再次，本店不提供清洗。无法修复的破损会当面说明。清晰的服务边界，是对彼此的尊重。\n\n总而言之，修补需要从实物出发，通过评估、沟通与确认，形成清晰的合作过程。\n\n值得一提的是，修补的意义不仅在于一件衣物，也在于一种珍惜旧物的态度。\n\n展望未来，旧衣将继续陪伴生活。我们期待与你一起，让日常多一些温度。\n\n如果你希望获得进一步的帮助，可以带着衣物到店，开启一次关于修补的交流。"
+    },
+    {
+      "id": "structure-single",
+      "task": "给这份面向学生的服务说明去AI味，必要时重写结构。只交改稿，不要评语。",
+      "material": "服务：旧衣修补。带实物到店评估；能修才接，接单时确认价格和取件时间；不提供清洗；不可修复的破损会当面说明。目标读者：还喜欢旧衣、想先判断能否继续穿的学生。",
+      "text": "喜欢的旧衣破了，先带来看看能不能修。\n\n我们看过实物再决定是否接单，无法修复的破损会当面说明。接单时确认价格和取件时间。本店不提供清洗。"
+    },
+    {
+      "id": "intent",
+      "task": "这份AI稿把我的意思写偏了，请按下面原始说明重写，可重排标题和正文。只交正文。",
+      "material": "我是为夜班工作者写社区图书馆介绍，重点是下夜班后可以在安静处读会书，不用消费。阅览区每日7:00开放，带身份证首次登记即可进入，借书需另办借阅证。不要新增睡眠、休息床位或全天开放服务。",
+      "text": "更便捷的阅读服务\n\n图书馆以便捷的借阅流程提升阅读体验。首次到访带身份证登记，办好借阅证即可进入阅览区。每日7:00开放，让更多读者享受丰富的知识资源。"
+    },
+    {
+      "id": "ad-preserve",
+      "task": "这是雨伞的海报文字，请用noai审后直接交文案。不要因为拟人、对比或短句就改掉有作用的表达。产品事实只有长伞柄便于双手握持；不要增加防风等级。",
+      "material": "品牌已确认主标题逐字锁定。",
+      "text": "雨再大，也握得住。\n长伞柄，给两只手都留了位置。"
+    },
+    {
+      "id": "ad-rewrite",
+      "task": "为旅行照片打印服务改写这组详情页文案，去AI味，有记忆点，短而准确。允许重新写标题和合并重复屏。不要给流程步骤逐项配口号。交一套。",
+      "material": "客户上传自己选好的照片，打印成纸质相片；客户可以给相片手写注释，也可以放进相册。纸质相片不是备份服务，不保证不褪色。规格和价格需咨询确认。目标是想把一次旅行整理成能翻看的相册，不是拍摄或摄影教学。",
+      "text": "第一屏：高质量照片输出，赋能旅行记忆。将数字照片转化为实体介质，为记忆留存提供全新可能。\n第二屏：多场景照片应用，满足多元需求。纸质相片可用于手写注释，也可放入相册，让应用更加灵活。\n第三屏：从数字到实体，让记忆有形。照片从屏幕走向纸面，再次实现旅行回忆的立体化呈现。\n第四屏：定制化规格选择，开启品质旅程。规格和价格请咨询确认。"
+    },
+    {
+      "id": "ad-claim",
+      "task": "改好这条广告，保持简短、有吸引力。允许修正原稿超过产品能力的承诺，不添新功能。只交文案。",
+      "material": "工具提供演讲提词滚动，帮助演讲者查看已写好的稿子；不负责写稿，也无提高演讲表现的验证。",
+      "text": "上台就出彩，掌声由它安排。\n自动滚动提词，帮你看清下一句。"
+    },
+    {
+      "id": "format",
+      "task": "只把英文逗号换成中文逗号，其他任何字词、标点与换行都别改。只返回文本。",
+      "material": "",
+      "text": "它不懂生活,但我喜欢这句话。\n慢慢地,再读一遍。"
+    }
+  ],
+  "regression_cases": [
+    {
+      "id": "ad-preserve",
+      "task": "这是雨伞的海报文字，请用noai审后直接交文案。不要因为拟人、对比或短句就改掉有作用的表达。产品事实只有长伞柄便于双手握持；不要增加防风等级。",
+      "material": "品牌已确认主标题逐字锁定。",
+      "text": "雨再大，也握得住。\n长伞柄，给两只手都留了位置。"
+    },
+    {
+      "id": "ad-claim",
+      "task": "改好这条广告，保持简短、有吸引力。允许修正原稿超过产品能力的承诺，不添新功能。只交文案。",
+      "material": "工具提供演讲提词滚动，帮助演讲者查看已写好的稿子；不负责写稿，也无提高演讲表现的验证。",
+      "text": "上台就出彩，掌声由它安排。\n自动滚动提词，帮你看清下一句。"
+    },
+    {
+      "id": "format",
+      "task": "只把英文逗号换成中文逗号，其他任何字词、标点与换行都别改。只返回文本。",
+      "material": "",
+      "text": "它不懂生活,但我喜欢这句话。\n慢慢地,再读一遍。"
+    },
+    {
+      "id": "ad-claim-transfer",
+      "task": "请改好这个外带汤杯的广告，去AI味，短且有记忆点；可以纠正无据效果。只交一套文案。",
+      "material": "杯盖有可关闭的饮口，饮用前打开，饮用后合上；未做防漏测试，不能承诺放包里不漏或倒置不洒。",
+      "text": "包里随便倒，滴汤都不跑。\n饮口可以关闭，喝前打开，喝后合上。"
+    }
+  ],
+  "outputs": {
+    "before": [
+      {
+        "id": "structure-full",
+        "text": "喜欢的旧衣破了，先带到店里看看能不能修。\n\n我们看过实物，能修才接；无法修复的破损会当面说明。接单时确认价格和取件时间。本店不提供清洗。"
+      },
+      {
+        "id": "structure-single",
+        "text": "喜欢的旧衣破了，先带来看看能不能修。\n\n我们看过实物再决定是否接单，无法修复的破损会当面说明。接单时确认价格和取件时间。本店不提供清洗。"
+      },
+      {
+        "id": "intent",
+        "text": "下夜班后，来图书馆安静读会儿书\n\n社区图书馆阅览区每日7:00开放，不用消费。下夜班后想找个安静的地方读会儿书，可以来这里。\n\n首次到访，带身份证登记即可进入阅览区；如果想借书带走，需要另办借阅证。"
+      },
+      {
+        "id": "ad-preserve",
+        "text": "雨再大，也握得住。\n长伞柄，给两只手都留了位置。"
+      },
+      {
+        "id": "ad-rewrite",
+        "text": "把这次旅行，整理成一本能翻的相册。\n\n选好照片上传，我们帮你打印成纸质相片。写几句注释，再放进相册，翻到哪一页，就读到哪一段旅程。\n\n规格和价格，请咨询确认。"
+      },
+      {
+        "id": "ad-claim",
+        "text": "下一句，就在眼前。\n自动滚动提词，帮你查看写好的演讲稿。"
+      },
+      {
+        "id": "format",
+        "text": "它不懂生活，但我喜欢这句话。\n慢慢地，再读一遍。"
+      }
+    ],
+    "plain": [
+      {
+        "id": "structure-full",
+        "text": "喜欢的旧衣破了，带到店里看看还能不能修。\n\n我们看过实物，能修才接；修不了的地方，会当面说明。接单时和你确认价格、取件时间。\n\n本店不提供清洗。"
+      },
+      {
+        "id": "structure-single",
+        "text": "喜欢的旧衣破了，先带来看看能不能修。\n\n我们看过实物再决定是否接单，无法修复的破损会当面说明。接单时确认价格和取件时间。本店不提供清洗。"
+      },
+      {
+        "id": "intent",
+        "text": "下了夜班，来读会儿书\n\n下夜班后，想找个安静的地方读会儿书，可以来社区图书馆，不用消费。\n\n阅览区每日7:00开放，第一次来带身份证登记，就能进入。想把书借回家，再另办借阅证。"
+      },
+      {
+        "id": "ad-preserve",
+        "text": "雨再大，也握得住。\n长伞柄，给两只手都留了位置。"
+      },
+      {
+        "id": "ad-rewrite",
+        "text": "把这趟旅行，整理成一本能翻看的相册。\n\n选好照片上传，我们帮你打印成纸质相片。你可以手写注释，再把照片放进相册，记下那天去了哪里、为什么笑得那么开心。\n\n规格和价格，请咨询确认。"
+      },
+      {
+        "id": "ad-claim",
+        "text": "下一句，就在眼前。\n自动滚动提词，方便查看写好的演讲稿。"
+      },
+      {
+        "id": "format",
+        "text": "它不懂生活，但我喜欢这句话。\n慢慢地，再读一遍。"
+      }
+    ],
+    "after": [
+      {
+        "id": "structure-full",
+        "text": "喜欢的旧衣破了，带到店里看看能不能修。\n\n我们看过实物，能修才接；无法修复的破损会当面说明。接单时确认价格和取件时间。\n\n本店不提供清洗。"
+      },
+      {
+        "id": "structure-single",
+        "text": "喜欢的旧衣破了，先带来看看能不能修。\n\n我们看过实物再决定是否接单，无法修复的破损会当面说明。接单时确认价格和取件时间。本店不提供清洗。"
+      },
+      {
+        "id": "intent",
+        "text": "下夜班后，来安静地读会儿书\n\n社区图书馆的阅览区每日7:00开放。下夜班后想找个安静的地方读会儿书，可以来这里，不用消费。\n\n首次到访，带身份证登记即可进入阅览区。想借书带走，需另办借阅证。"
+      },
+      {
+        "id": "ad-preserve",
+        "text": "雨再大，也握得住。\n长伞柄，给两只手都留了位置。"
+      },
+      {
+        "id": "ad-rewrite",
+        "text": "把这趟旅行，装进相册。\n\n上传你选好的照片，我们帮你打印成纸质相片。写上自己的注释，放进相册，以后还能一页页翻看。\n\n规格和价格请咨询确认。"
+      },
+      {
+        "id": "ad-claim",
+        "text": "自动滚动提词，帮你看清下一句。"
+      },
+      {
+        "id": "format",
+        "text": "它不懂生活，但我喜欢这句话。\n慢慢地，再读一遍。"
+      }
+    ],
+    "regression": [
+      {
+        "id": "ad-preserve",
+        "text": "雨再大，也握得住。\n长伞柄，给两只手都留了位置。"
+      },
+      {
+        "id": "ad-claim",
+        "text": "下一句，就看这一眼。\n演讲稿自动滚动，方便查看。"
+      },
+      {
+        "id": "format",
+        "text": "它不懂生活，但我喜欢这句话。\n慢慢地，再读一遍。"
+      },
+      {
+        "id": "ad-claim-transfer",
+        "text": "想喝就开，喝完就合。\n带可关闭饮口的外带汤杯。"
+      }
+    ]
+  },
+  "metadata": {
+    "before": {
+      "context": "同一执行上下文的七例开发测试，各例未隔离",
+      "read_paths": [
+        "development-run/before/SKILL.md",
+        "development-run/before/references/editor-persona.md",
+        "development-run/before/references/human-voice.md",
+        "development-run/before/samples/recommendation-pairs.md",
+        "development-run/before/references/author-final-copy.md",
+        "development-run/before/samples/prose-pairs.md",
+        "development-run/cases.json"
+      ],
+      "model_configuration": {
+        "model": "未知",
+        "reasoning_effort": "未知",
+        "temperature": "未知",
+        "top_p": "未知",
+        "seed": "未知"
+      },
+      "external_tools": "仅本地文件读写；未联网、未发布",
+      "self_scoring": false
+    },
+    "plain": {
+      "condition": "普通编辑",
+      "files_read": [
+        "development-run/cases.json",
+        "development-run/output-plain.json",
+        "development-run/meta-plain.json"
+      ],
+      "model": "未知",
+      "model_parameters": {
+        "temperature": "未知",
+        "top_p": "未知",
+        "seed": "未知",
+        "reasoning_effort": "未知"
+      },
+      "context": "同一上下文完成七例，非逐例独立上下文。继承上层对话与指令。",
+      "skills_loaded": [],
+      "network_used": false,
+      "other_test_outputs_read": false,
+      "contamination": "未读取任何写作技能；继承上下文含 AGENTS.md 表达与 noai 检查要求、Ponytail 指令及技能目录，无法视为完全无风格指导的裸模型条件。未执行 noai 技能加载，按本条件限定直接编辑。",
+      "output_schema": "JSON 数组，每项保留 id，text 为改稿",
+      "verification_tool": "~/data/script/verify_file.py（仅执行，未将脚本源码读入模型上下文）"
+    },
+    "after": {
+      "skill_root": "~/fenming-ai/noai-skill",
+      "read_paths": [
+        "~/fenming-ai/noai-skill/SKILL.md",
+        "~/fenming-ai/noai-skill/references/editor-persona.md",
+        "~/fenming-ai/noai-skill/references/human-voice.md",
+        "~/fenming-ai/noai-skill/references/rewrite-and-intent.md",
+        "~/fenming-ai/noai-skill/references/advertising-edit.md",
+        "~/fenming-ai/noai-skill/references/author-final-copy.md",
+        "~/fenming-ai/noai-skill/samples/prose-pairs.md",
+        "~/fenming-ai/noai-skill/samples/advertising-pairs.md",
+        "development-run/cases.json"
+      ],
+      "model_configuration": {
+        "model_family": "GPT-6（系统身份）",
+        "exact_model": "未知",
+        "reasoning_effort": "未知",
+        "temperature": "未知",
+        "seed": "未知"
+      },
+      "execution": "同一执行上下文处理七例；非每例独立执行",
+      "case_count": 7,
+      "network_used": false
+    },
+    "regression": {
+      "read_paths": [
+        "~/fenming-ai/noai-skill/SKILL.md",
+        "~/fenming-ai/noai-skill/references/editor-persona.md",
+        "~/fenming-ai/noai-skill/references/human-voice.md",
+        "~/fenming-ai/noai-skill/references/advertising-edit.md",
+        "~/fenming-ai/noai-skill/references/author-final-copy.md",
+        "~/fenming-ai/noai-skill/references/rewrite-and-intent.md",
+        "~/fenming-ai/noai-skill/samples/advertising-pairs.md",
+        "~/fenming-ai/noai-skill/samples/prose-pairs.md",
+        "development-run/regression-cases.json"
+      ],
+      "model_settings": {
+        "model": "未知",
+        "reasoning_effort": "未知",
+        "temperature": "未知",
+        "seed": "未知"
+      },
+      "execution_context": "全部4例在同一子代理上下文中完成，并非逐例独立上下文。",
+      "network_access": false,
+      "skill_modified": false
+    }
+  },
+  "anonymous_review_mapping": {
+    "A": "plain",
+    "B": "after",
+    "C": "before"
+  },
+  "anonymous_review": "# 七例盲审\n\n本次只依据 blind-review-input.json 中的任务、material、原稿及 A/B/C 输出判断，不读取版本、技能或来源信息，不推断条件身份。以下是文本评审，不是真人读者实验或广告效果实验。\n\n总体判断：三组都完成了主要事实恢复、锁定保留和格式约束。差异主要集中在广告改写：ad-claim 的 A/C 保留了有依据的广告主张，B 退成了单句功能说明；ad-rewrite 中三组都有有效重组，A 多加了一种未经材料支持、也非必要的旅行情绪场景。其他五例没有足以建立稳定优劣的差距。不能据此给三组排出全面能力名次。\n\n## 1. structure-full：A = B = C\n\n原稿把同一服务拆成“首先／其次／再次”，又接“总而言之／值得一提／展望未来”，学生真正需要的到店判断和交易条件被多轮抽象总结包围。三组均把入口改为“喜欢的旧衣破了……看看能不能修”，随后集中交代看实物、能修才接、不能修当面说明、接单确认价格与取件时间、不清洗。改善来自信息次序和去除重复收尾，不只是篇幅缩短。\n\nA 的“修不了的地方，会当面说明”比 B/C 的“无法修复的破损”略口语，但未改变实质条件。A/B 将不清洗另起一段，使边界更易独立看到；C 放在服务流程之后，也清楚可读。这些是呈现差异，不足以判定胜负。三组均未额外承诺修复效果、价格或时效。\n\n## 2. structure-single：A = B = C\n\n三组逐字保留原稿。原稿已直接回应“想知道旧衣能不能继续穿”的读者任务，随后给出评估、接单与服务边界，无须为了证明编辑工作而重写。\n\n“看过实物再决定是否接单”没有逐字重复 material 的“能修才接”，但紧接“无法修复的破损会当面说明”，在这个语境中足以表达先评估后承接。三组都没有把它改成必接或必修好；也没有删掉价格、时间或不清洗条件。\n\n## 3. intent：A = B = C\n\n三组均纠正了原稿最重要的事实错误：进入阅览区只需首次持身份证登记，借书才另办借阅证。A 用“想把书借回家，再另办借阅证”，B/C 用“想借书带走……另办借阅证”，条件分隔都明确。\n\n三组也均把原来泛泛的“更便捷的阅读服务”恢复为夜班工作者下班后安静读书的用途，保留“不用消费”和“每日7:00开放”。A 先讲用途再讲时间；B/C 把时间放在正文更前面，标题也含安静读书。均未新增睡眠、床位或全天开放，顺序差异没有造成明显理解损失。\n\n局限：材料未给出闭馆时间，三组也都未补充，因此无法据此判断所有夜班下班时段是否都适用。这是材料范围，不是编辑遗漏可自行补全的事实。\n\n## 4. ad-preserve：A = B = C\n\n三组均逐字保留“雨再大，也握得住。／长伞柄，给两只手都留了位置。”，正确遵守主标题锁定。\n\n第二句把长伞柄便于双手握持的事实转为可感知的持握画面，“给两只手……留了位置”有解释作用，不能仅因拟人而删掉。三组没有增加防风等级或其他性能事实。\n\n局限：主标题含较强的雨天承诺，单凭长伞柄材料不能证明任意雨势下的实用表现；本题又明确逐字锁定主标题，故保留应评价为遵约，不能因此宣称该广告性能主张已经获得验证。这一局限三组相同。\n\n## 5. ad-rewrite：B = C，A 略后；差距有限\n\n三组均合并了原稿第一、第三屏“数字变实体”的重复内容，围绕“一次旅行整理成能翻看的相册”组织整套文案。均保留上传已选照片、打印纸质相片、注释与相册用法、规格价格咨询，且没有逐项给流程配口号。三组均未声称提供备份或保证不褪色；任务不要求必须逐项刊登这些否定信息，因此没有写出免责声明本身不算漏项。\n\nB 的“把这趟旅行，装进相册”把购买目的收成一句可记忆的主张，随后说明客户与服务各做什么。C 的“翻到哪一页，就读到哪一段旅程”把翻相册与回忆旅行连接起来，有可理解的修辞作用，也没有扩张产品功能。B 较克制，C 更有抒情感，文本证据不足以证明哪一种更吸引目标客户，判平。\n\nA 的“记下那天去了哪里、为什么笑得那么开心”给出注释示例，但“笑得那么开心”是材料没有提供的情绪场景。它更接近建议性的想象而非捏造产品事实，不能夸大为严重虚假承诺；不过相比 B/C，它把旅行经验收窄为开心笑脸，增加了一段对核心动作无必要的解释，准确与紧凑程度略逊。\n\n三组的共同小问题：material 允许手写注释，也允许放入相册，输出均倾向写成“写注释，再放相册”的连续动作。A 的“你可以”保留可选语气更明显；B/C 更像用法建议。结合广告语境和相册目标，尚不足以认定把可选动作变成服务强制条件，但后续若转成正式操作指南，应明确可自行选择。不能忽略 A 在这一点上的细微优势。\n\n## 6. ad-claim：A = C，优于 B\n\n三组均删除“上台就出彩，掌声由它安排”，正确撤下没有验证的演讲表现承诺。\n\nA/C 保留“下一句，就在眼前”作为主张，再用“自动滚动提词……查看写好的演讲稿”落到产品能力。主张有画面且由滚动提词支持；“写好的”也明确不负责写稿。A 的“方便查看”和 C 的“帮你查看”没有足以拉开结果的差异。\n\nB 的“自动滚动提词，帮你看清下一句”准确、简短，没有新增功能，但基本只是复用原稿事实句。相较 A/C，它在“保持有吸引力”的广告任务上完成较弱，也不如 A/C 明示稿子已经写好。这不是因一句话太短而扣分，而是它删去了无据主张后，没有另建一个有据且可记忆的广告表达。\n\n“自动滚动”出自原稿，material 只写“演讲提词滚动”。在未有直接矛盾、任务允许保留原稿信息的前提下，三组的共同沿用不能据此判为某组独有的无据新增；如果 material 被定义为穷尽性的产品规格，则这项能力仍需单独核实。\n\n## 7. format：A = B = C\n\n三组均只将两处英文逗号换成中文逗号，保留其余字词、句号和原换行。没有把“它不懂生活”或“慢慢地”当作需要润色的表达，也没有增加解释。符合精确格式修改任务。\n\n## 评审边界\n\n七个案例样本很小，其中 structure-full 与 structure-single 共用服务与材料，不能当作两个完全独立场景。structure-single、ad-preserve、format 三例的三组输出相同；其余若干差异也仅是语序、分段和轻微措辞。最清楚的区分证据是 ad-claim 是否在修正承诺后保留广告表达，不能外推为某组在所有内容类型都更好。\n\n本次未测试读者理解速度、实际广告转化、记忆表现或修改稳定性，也未查看输出的生成过程。所有关于“更有记忆点”的判断仅指文本具有明确、可复述的表达结构，不代表经过真人记忆测试。\n",
+  "limits": [
+    "One output per case and condition; shared context within each condition",
+    "Inherited model defaults; exact served model and sampling parameters unverified",
+    "Ordinary-edit condition inherits environment guidance; not a bare-model control",
+    "No production-user text redistributed; no human or market evaluation",
+    "Targeted regression followed candidate-v1 failure; not an untouched holdout"
+  ]
+}
