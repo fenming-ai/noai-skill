@@ -224,6 +224,8 @@ noai 不因“像营销”就自动删除强词，也不把所有入口改成中
 
 读取曲子时同时看它解决的问题与使用位置：用途准确、封面认可、正文语气认可不是同一结论。后续反馈否定某处表达时，更新该位置的适用范围，不让旧认可覆盖新取舍。不要只积累新例而保留相反的无条件推荐；见[推荐文案对照](samples/recommendation-pairs.md)。
 
+若调用方提供了私有声音库（交接中的 `voiceDir` 或环境变量 `NOAI_VOICE_DIR`），先读其中的 `VOICE.md` 和适用当前载体的对照，作为有依据的目标声音；读取方式与优先级见[私有声音库](references/private-voice.md)。没有私有库时跳过，不猜路径。
+
 若正文旁存在同名 `.curve.json`、voice 元数据或其他上游写作契约，必须先读取再建立语感卡。已有契约优先于临时推断：`approvedLanguage`、明确锁定的 voice 标志句和用户确认过的节奏默认不得改写；只有用户明确解除保护，或逐句证明改写净收益且不改变契约目标时，才可进入候选。
 
 至少记录以下 7 项，每项都要引用原文中的具体句子、标点或段落作为证据：
@@ -283,6 +285,7 @@ noai 不因“像营销”就自动删除强词，也不把所有入口改成中
 - 加载 `references/editor-persona.md`（编辑角色，常驻）
 - 加载 `references/human-voice.md`（人味信号词典 7 信号，常驻）
 - 加载对应媒介的 samples（AI味→人味 对比对曲子）
+- 有私有声音库时，同时加载适用当前载体的作者对照；与公开曲子冲突时以作者对照为准
 - AI 读完这些，建立"什么样的组合是 AI 味"的先验
 - principles.md 降为按需深度参考（voice 已压缩引用 5 条）
 
@@ -372,7 +375,9 @@ AI 读产出物（或从 HTML 提取的纯文本），先跑全文模式，再�
 - 最终采用版本
 - 可泛化的判断原则
 
-仅当用户授权沉淀到该技能目录时，记录脱敏后的反馈；默认不把当前私人文章写进公共样例，不上传反馈。
+存在私有声音库时，反馈一律写入该库的 `candidates/`，不写入本仓库；格式与升级条件见[私有声音库](references/private-voice.md)。
+
+不存在私有声音库时，仅当用户授权沉淀到该技能目录，才记录脱敏后的反馈；默认不把当前私人文章写进公共样例，不上传反馈。
 
 用户接受的去味改写 → 写成正向曲子（AI味→人味→WHY→记住什么）追加进对应 `samples/*-pairs.md`，并把反例追加进 `references/anti-examples.md`。
 
@@ -391,6 +396,7 @@ AI 读产出物（或从 HTML 提取的纯文本），先跑全文模式，再�
 | 场景 | 加载 | context 预算 |
 |------|------|-------------|
 | 任何产出（常驻） | editor-persona.md + human-voice.md | ~2.5k |
+| 调用方提供私有声音库时 | + `VOICE.md` + 适用当前载体的 `pairs/`（见 private-voice.md） | +约 2k |
 | 写/改文字 | + prose-pairs.md | +2k → ~4.5k |
 | 结构重写／意图恢复 | + rewrite-and-intent.md | 仅对应问题读取 |
 | 广告语／海报／详情页文案 | + advertising-edit.md及advertising-pairs.md相关曲子 | 仅对应问题读取 |
@@ -450,6 +456,7 @@ noai-skill/
 │   ├── principles.md                  # 5 条跨媒介原则详述（按需深度参考 <2k）
 │   ├── humanizer-zh.md                # 历史通用模式参考；溯源与许可证见 THIRD_PARTY_NOTICES.md
 │   ├── anti-examples.md               # 跨媒介反例库（带 WHY + 检测词，脚本读）
+│   ├── private-voice.md               # 可选：读取和写回调用方的私有声音库
 │   └── evidence.md                    # 效果声明与证据边界
 ├── samples/                           # 曲子库（"听曲学会"的曲库）
 │   ├── prose-pairs.md                 # 文字媒介 AI味→人味 对比对
